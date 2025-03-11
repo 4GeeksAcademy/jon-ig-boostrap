@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand">
+          <i class="fa-brands fa-instagram"></i>
+          Instagram
+        </a>
+        <div class="d-flex">
+          <button type="button" class="btn btn-success me-2" type="submit" data-bs-toggle="modal"
+            data-bs-target="#createPost">Create a new post</button>
+          <!-- Modal -->
+          <div class="modal" id="createPost" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Create a new post</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Caption:</p>
+                  <textarea class="form-control" placeholder="Add the caption of your post here"
+                    id="floatingTextarea"></textarea>
+                  <div class="d-flex mt-3"><button type="button" class="btn btn-light me-2"><i
+                        class="fa-solid fa-camera"></i></button>
+                    <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenu2">
+              <li><button class="dropdown-item" type="button">Profile</button></li>
+              <li><button class="dropdown-item" type="button">Accesibility</button></li>
+              <li><button class="dropdown-item" type="button">Privacy and Data</button></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div>
+    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+          type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+            class="fa-solid fa-table-cells"></i></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+          type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+            class="fa-solid fa-square"></i></button>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+    
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <div class="container d-grid justify-content-center">
+        <div class="card mb-3" style="width: 40rem;">
+          <div class="card-header">
+            <div class="d-flex justify-content-between">
+              <p class="fs-3">Mutt</p>
+              <p class="fs-6">01/30</p>
+            </div>
+          </div>
+          <div class="card" style="width: 40rem;">
+            <img src="https://muttmotorcyclesspain.com/wp-content/uploads/2020/04/Hilts125ccMattGreen-Imagenproducto_1600x.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p><strong>204 likes</strong></p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet mollitia dicta non, ex odit placeat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container d-grid justify-content-center">
+        <div class="card mb-3" style="width: 40rem;">
+          <div class="card-header">
+            <div class="d-flex justify-content-between">
+              <p class="fs-3">Honda</p>
+              <p class="fs-6">04/27</p>
+            </div>
+          </div>
+          <div class="card" style="width: 40rem;">
+            <img src="https://www.galgo.com/wp-content/uploads/2023/04/cafe-racer-honda.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p><strong>420 likes</strong></p>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, illo. Eveniet optio id officiis minima distinctio repellendus nobis voluptatibus dicta.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container d-grid justify-content-center">
+        <div class="card mb-3" style="width: 40rem;">
+          <div class="card-header">
+            <div class="d-flex justify-content-between">
+              <p class="fs-3">BMW</p>
+              <p class="fs-6">07/09</p>
+            </div>
+          </div>
+          <div class="card" style="width: 40rem;">
+            <img src="https://img.remediosdigitales.com/73012f/crd-2/840_560.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p><strong>500 likes</strong></p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam distinctio officia eos nemo unde assumenda accusantium perferendis ex tempore fugiat!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      <div class="container">
+        <div class="row">
+          <div class="col p-1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT52j94mbXKTq45k75ZMtX_rU5dzmdQLJnbFg&s"
+              class="card-img-top" alt="...">
+          </div>
+          <div class="col p-1">
+            <img src="https://img.remediosdigitales.com/73012f/crd-2/840_560.jpg"
+              class="card-img-top" alt="...">
+          </div><div class="col p-1">
+            <img src="https://www.motociclismo.es/uploads/s1/11/61/84/19/manillar-cafe-racer.jpeg"
+              class="card-img-top" alt="...">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col p-1">
+            <img src="https://www.motociclismo.es/uploads/s1/11/59/18/59/como-cambiar-un-escape-cafe-racer.jpeg"
+              class="card-img-top" alt="...">
+          </div>
+          <div class="col p-1">
+            <img src="https://imgx.gridoto.com/crop/0x0:0x0/700x465/photo/2019/07/10/423736161.jpg"
+              class="card-img-top" alt="...">
+          </div><div class="col p-1">
+            <img src="https://i.pinimg.com/736x/78/15/ea/7815ead317b3e887b743490b4c5de0af.jpg"
+              class="card-img-top" alt="...">
+          </div>
+        </div><div class="row">
+          <div class="col p-1">
+            <img src="https://us.images.westend61.de/0001022547pw/tres-hombres-sentados-en-motos-cafe-racer-en-un-polvoriento-camino-de-tierra-MINF07948.jpg"
+              class="card-img-top" alt="...">
+          </div>
+          <div class="col p-1">
+            <img src="https://knowmefotoempresa.com/wp-content/uploads/2019/01/fotografia-empresa-20.jpg"
+              class="card-img-top" alt="...">
+          </div><div class="col p-1">
+            <img src="https://blackpines.fr/cdn/shop/articles/cafe-racer-5-raisons-de-franchir-le-pas.jpg?v=1666172519"
+              class="card-img-top" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
